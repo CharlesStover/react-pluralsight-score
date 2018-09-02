@@ -16,7 +16,7 @@ $levels_width: 80px;
   height: $height;
   padding-left: 6px;
   position: relative;
-  width: calc(100% - $levels_width);
+  width: calc(100% - #{$levels_width});
 }
 
 .graph {

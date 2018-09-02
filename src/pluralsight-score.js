@@ -57,7 +57,7 @@ export default class PluralsightScore extends React.PureComponent {
   }
 
   get mainClassName() {
-    if (this.props.title === null) {
+    if (this.props.hidden) {
       return styles.main;
     }
     return styles.main + ' ' + styles.mainVisible;

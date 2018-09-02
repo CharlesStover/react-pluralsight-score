@@ -10,3 +10,14 @@ A React component mimicking the Pluralsight Score IQ graph.
 ## Install
 * `npm install pluralsight-score --save` or
 * `yarn add pluralsight-score`
+
+## Props
+* hidden: boolean
+  Gives the component a height of `0`, useful for height-based CSS transitions.
+  Default: `false`
+
+* onRef: function
+  Callback for the root ref.
+
+* percentile: number
+  A number from 0 to 100 used to draw and animate the graph.
