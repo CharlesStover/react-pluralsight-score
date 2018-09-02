@@ -1,0 +1,42 @@
+{
+  "name": "pluralsight-score",
+  "version": "1.0.0",
+  "author": "Charles Stover <npmjs@charlesstover.com>",
+  "bugs": {
+    "url": "https://github.com/CharlesStover/react-pluralsight-score/issues"
+  },
+  "dependencies": {
+    "react-object-prop": "^1.0.5"
+  },
+  "description": "A React component mimicking the Pluralsight Score IQ graph.",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-loader": "^8.0.0-beta.6",
+    "css-loader": "^1.0.0",
+    "node-sass": "^4.9.3",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "homepage": "https://github.com/CharlesStover/react-pluralsight-score#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "peerDependencies": {
+    "react": "^16.4.2"
+  },
+  "repository": "https://github.com/CharlesStover/react-pluralsight-score.git",
+  "scripts": {
+    "build": "webpack",
+    "dev": "set NODE_ENV=development && webpack",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"No test.\""
+  }
+}

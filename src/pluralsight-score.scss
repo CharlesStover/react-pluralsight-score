@@ -1,0 +1,99 @@
+$border_color: rgba(255, 255, 255, 0.1); // #303030
+$height: 190px;
+$levels_width: 80px;
+
+.background {
+  bottom: 0;
+  height: $height;
+  left: 0;
+  opacity: 0.15;
+  position: absolute;
+  width: 100%;
+}
+
+.chart {
+  border-bottom: 1px solid $border_color;
+  height: $height;
+  padding-left: 6px;
+  position: relative;
+  width: calc(100% - $levels_width);
+}
+
+.graph {
+  border-top: 1px dashed $border_color;
+  bottom: 0;
+  left: 9px;
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+}
+
+.foreground {
+  background-color: transparent;
+  height: $height;
+  width: 100%;
+
+  > path {
+    fill: none;
+  }
+}
+
+.levels {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: $levels_width;
+
+  > dl {
+    border-right-style: solid;
+    border-right-width: 2px;
+    flex-basis: 0;
+    flex-grow: 1;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 1px 0;
+    padding: 12px 10px 14px 0;
+    text-align: right;
+
+    &:first-child {
+      color: #26C1FB;
+      margin-top: 0;
+    }
+
+    &:nth-child(2) {
+      color: #86CE21;
+    }
+
+    &:last-child {
+      color: #FFC200;
+      margin-bottom: 0;
+    }
+
+    & > dd {
+      color: #A0A0A0;
+      font-size: 12px;
+      font-weight: 200;
+      margin: 0;
+    }
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  height: 0;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 530px + $levels_width;
+  overflow: hidden;
+  transition-duration: 0.5s;
+  transition-property: height, margin-top;
+  transition-timing-function: ease;
+
+  &.mainVisible {
+    height: $height;
+    margin-top: 1em;
+  }
+}
