@@ -7,6 +7,8 @@ A React component mimicking the Pluralsight Score IQ graph.
 [![minified size](https://img.shields.io/bundlephobia/min/pluralsight-score.svg)](https://www.npmjs.com/package/pluralsight-score)
 [![minzipped size](https://img.shields.io/bundlephobia/minzip/pluralsight-score.svg)](https://www.npmjs.com/package/pluralsight-score)
 
+[![screenshot](https://user-images.githubusercontent.com/343837/45318006-47dc1300-b501-11e8-8204-9f88a7ea49c0.png)](https://www.npmjs.com/package/pluralsight-score)
+
 ## Install
 * `npm install pluralsight-score --save` or
 * `yarn add pluralsight-score`
